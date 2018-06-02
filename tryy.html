@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.i{
+			background-color: orange;
+			border:3px solid yellow;
+			width:200px;
+			height:200px;
+			margin: 200px;
+			padding: 20px;
+			color:yellow;
+		}
+	</style>
+</head>
+<body >
+	<div class="i">
+		<p>kdsc</p></div>
+		<img src="fb/image1.jpeg" class="i">
+	
+	
+	<script type="text/javascript">
+		
+			//////////////var div = document.getElementById("i");
+		
+			var newH = document.createElement("h1");
+			//newH.innerHTML="HTMLLL";
+			var text= document.createTextNode("hiiii");
+			newH.appendChild(text);
+			var div = document.getElementsByClassName("i")[0];
+		
+			div.appendChild(newH);
+
+			var p = document.getElementsByTagName('p');
+
+
+			div.addEventListener("click", a, false);
+
+			div.onclick = function(){
+				alert("You clicked");
+			}
+			function a() {
+				// body...
+				alert("jhahah");
+			};
+			
+			//document.addEventListener("click","a",false);
+
+			var img = document.getElementsByClassName('id');
+			var imgArray = ['phad/image1.jpeg','fb/image1.jpeg','phad/image2.jpeg'];
+			var index=0;
+alert("errorrr");
+			function ab(){
+				img.setAttribute("src",imgArray[index]);
+				index++;
+				//alert("Image  changed");
+				if(index>imgArray.length)
+					index=0;
+			}
+
+var click = setInterval(ab,5000);
+		
+		img.onclick = function(){
+			clearInterval(click);
+		}
+		
+	</script>
+</body>
+</html>

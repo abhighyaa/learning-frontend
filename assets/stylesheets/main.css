@@ -1,0 +1,94 @@
+html,body{
+ 
+  height:250px;
+  background:green;
+}
+div {
+
+background: pink;
+height: 100%;
+ margin: 2%;
+}
+
+h3{
+  height: 80%;
+  background-color: orange;
+}
+h2{
+  height: 5%;
+  background-color: yellow;
+
+}
+
+
+
+
+/*2{
+
+  color: green;
+  font-style: Times New Roman;
+
+}
+
+.check.at{
+
+  color: blue;
+  font-style: Sans Sarif;
+
+}
+
+a{
+
+  color: brown;
+
+}
+
+.inline {
+  display: inline-block;
+  color: grey;
+}
+
+.block {
+  display: inline-block;
+  color: brown;
+}
+
+h1{
+  font-family: "Lobster";
+}
+
+  @font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url("https://fonts.google.com/specimen/Pangolin") ;
+}
+
+
+
+.makeablock{
+  
+  padding: 2%;
+  margin:2%;
+  background-color: pink;
+  color: red;  
+  
+  border-style: double;
+  border-color: red;
+  border-width: 100%;
+  border-radius: 20%;
+  box-sizing: border-box;
+  /*font-size: 100px;
+  text-align: center;
+  height: %;
+  width: 100%;
+  text-decoration-line: solid;
+}
+*:after {
+  -webkit-box-sizing: border-box;}
+
+#color{
+  background-color: yellow;
+  margin:1%;
+  padding: 2%;
+  width: 90%;
+  height: 400%;
+}*/

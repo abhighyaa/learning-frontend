@@ -1,0 +1,12 @@
+.container{
+
+	display: block;
+	border: solid 4px darkgreen;
+	border-radius: 5px;
+	background-color: green;
+	font-size: 30px;
+	text-align: center;
+	margin:2% 5%;
+	padding:3%;
+}
+

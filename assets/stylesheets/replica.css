@@ -1,0 +1,64 @@
+html,body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nav{
+	position: absolute;
+	background-color: black;
+	float: left;
+	margin: 0px;
+	width: 20%;
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	top:0;
+	left: 0;
+}
+
+.grey{
+	color: lightgrey;
+	margin-bottom: 0px;
+}
+
+.big.white{
+	margin-top: 1px;
+}
+
+.white{
+	color: white;	
+	padding: 0px;
+	margin-top: 0px;
+}
+.black{
+	color: black;
+	padding: 0px;
+	margin-top: 1px;
+}
+* {
+	font-family: "Times New Roman";
+}
+
+.center{
+	text-align: center;
+
+}
+.margin{
+	margin:2px;
+}
+
+
+.div1{
+	display: inline-block;
+	width: 45%;
+}
+
+.div2{
+	display: inline-block;
+	width: 10%;
+}
+
+.contain1{
+	
+}

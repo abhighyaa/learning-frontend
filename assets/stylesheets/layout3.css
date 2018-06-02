@@ -1,0 +1,35 @@
+.container{
+
+	display: block;
+	border: solid 4px darkgreen;
+	border-radius: 5px;
+	background-color: green;
+	font-size: 30px;
+	text-align: center;
+	margin:2% 5%;
+	padding:3%;
+}
+
+#section-first{
+	display: inline-block;
+	width:23%;
+	margin-right: 2px;
+}
+
+#section-mid{
+	display: inline-block;
+	width:23%;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+#aside{
+	display: inline-block;
+	width: 23%;
+	margin-left: 2px;
+}
+
+footer{
+	clear: left;
+	margin-top: 5%; 
+}

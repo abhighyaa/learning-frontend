@@ -1,0 +1,43 @@
+.container{
+
+	display: block;
+	border: solid 4px darkgreen;
+	border-radius: 5px;
+	background-color: green;
+	font-size: 30px;
+	text-align: center;
+	margin: 2% 4%;
+	padding:3%;
+}
+
+#section-big{
+	background-color: lightgrey;
+	border-color: transparent;
+}
+#div{
+	background-color: lightgrey;
+}
+
+#div::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#section{
+	display: inline-block;
+	width: 40%;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#aside{
+	display: inline-block;
+	width: 40%;
+	margin-left: 1px;
+	margin-right: 1px;	
+}
+
+footer{
+	clear: both;
+}

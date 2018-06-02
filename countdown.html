@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CountDown</title>
+	<style type="text/css">
+		.inputArea, .time{
+			position: absolute;
+			left: 50%;
+			top:100px;
+			transform: translateX(-60%);
+			
+		}
+		.time{
+			top: 200px; 
+			color: black;
+			font-size: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="inputArea"></div>
+	<div class="time"></div>
+
+	<script type="text/javascript">
+		var secondsRemaining;
+
+		function reset(){
+
+			document.getElementsByClassName('inputArea')[0].style.display="block";
+			document.getElementsByClassName('time')[0].innerHTML="0 : 00";
+			document.getElementsByClassName('time')[0].style.color="black";
+			document.getElementById('min').value="";
+
+		}
+
+		function change(){
+
+			var display = document.getElementsByClassName('time')[0];
+			var minRemaining = Math.floor(secondsRemaining/60);
+			var sec = secondsRemaining - (minRemaining*60);
+
+			if(sec<10){
+				sec= "0"+sec;
+				if(minRemaining==0)
+					display.style.color="Red";
+			}
+
+			if(secondsRemaining==0){
+				clearInterval(Interval);
+				alert("Done");
+				reset();
+			}
+			var message = minRemaining+" : "+sec;
+			display.innerHTML = message;
+			secondsRemaining--;
+
+		}
+
+		function startCountdown(){
+
+			var min = document.getElementById('min').value;
+			
+			if(isNaN(min)){
+				alert("Enter a number");
+				return;
+			}
+
+			secondsRemaining = min * 60;
+
+			var Interval = setInterval(change,1000);
+
+
+			document.getElementsByClassName('inputArea')[0].style.display = "none";
+
+		}
+
+		var inputArea = document.getElementsByClassName('inputArea')[0];
+
+		var input = document.createElement("input");
+		input.setAttribute("type","text");
+		input.setAttribute("id","min")
+		inputArea.appendChild(input);
+
+		var button = document.createElement("input");
+		button.setAttribute("type","button");
+		button.setAttribute("value","Start");
+		inputArea.appendChild(button);
+
+		var initial = document.createTextNode("0.00");
+		document.getElementsByClassName("time")[0].appendChild(initial);
+
+		button.onclick = function() {
+			startCountdown();
+		}
+
+	</script>
+</body>
+</html>
